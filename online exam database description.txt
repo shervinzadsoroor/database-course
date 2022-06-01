@@ -1,0 +1,14 @@
+there are three types of Person(Manager, Instructor and Collegian)
+that there is only one table as Person for all of them and specified by dtype.
+
+each account has many roles and each role has a list of privileges and thus 
+there is a junction table as role_privilege,
+
+there are many courses that have a list of Collegians and only one Instructor,
+each Instructor has many courses (One to Many)
+Collegians can participate in many courses(Many to Many)
+
+each Course has many Exams(One To Many)
+each Exam has many Questions and each Question can be used in many Exams(Many To Many)
+
+there are two types of Questions(MultipleChoice and Descriptive) specified by dtype
